@@ -1,3 +1,8 @@
+:root{
+    --cube-side-width: 10em;
+}
+
+
 .main{
     /* background-color: rgb(193, 209, 45); */
     margin: 10% 10%;
@@ -41,8 +46,8 @@
   }
 .block3d{
     /* background-color: rosybrown; */
-    width:100%;
-    height:33%;
+    width:var(--cube-side-width);
+    height:calc(var(--cube-side-width) * 0.333333);
     position:relative;
     /* animation: spinning 10s infinite; */
     transform-style:preserve-3d;
@@ -74,9 +79,9 @@
     text-align:center;
 }
 .lid{
-    top: 2em;
+    top: 0em;
     width:100%;
-    height:100%;
+    height:160%;
     position:absolute;
     background-color:rgba(3, 121, 255);
     
