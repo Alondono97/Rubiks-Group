@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubiks Groups</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+<body class="body">
+    <header>
+        <div class="title">
+            Intro to Group Theory Using Rubiks Cubes
+        </div>
+    </header>
+    <main>
+        <section> 
+            <div class="prose">
+                <h2>Introduction</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+        <section> 
+            <div class="prose">
+                <h2>Rubik's Notation</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+        <section> 
+            <div class="prose">
+                <h2>Groups</h2>
+                <h3>What is a Group?</h3>
+                    <p>
+                        We will begin with the definition of a group. However, before we can define a group, we
+                        must define the concept of a Binary Operator.                 
+                    </p>
+
+                    <b>Def Binary Operator:</b>
+                    <p>
+                        Given two elements a,b of a set S, a binary operator \(*\) maps these pair of elements 
+                        to an element in that same set S. A more rigorous definition can be found <a href='definitions/binOp.html'>here.</a>
+                    </p>
+                    <p>
+                        For example: 
+                        <br>Addition is a binary operation under the \(+\) operator.<br> 
+                        \(2,3 \, \epsilon \, \mathbb{Z} \) <br>
+                        \( 2 + 3 = 5 \, \epsilon \, \mathbb{Z} \)
+                    </p>
+
+                    <b>Def Group</b>
+                    <p>
+
+                        A Group is a set, let's call it G, paired with a binary operation \(*\) which fulfills
+                        the following axioms:
+                        <ol>
+                            <li>
+                                The binary operation \(*\) must be closed.<br>
+                                This means for any elements \( g, \,h \, \epsilon \, G\), \( g * h \) must also be in G.
+                            </li>
+                            <br>
+                            <li>
+                                The binary operation \(*\) must be associative.<br>
+                                This means for all \(a, b, c \, \epsilon \, G \):<br>
+                                \( (a * b) * c = a * (b * c)   \)
+
+                            </li>
+                            <br>
+                            <li>
+                                There exist some element \(e\) in \(G\) such that for all \( x \, \epsilon \, G\): <br>
+                                \( e * x = x * e = x\)
+                            </li>
+                            <br>
+                            <li>
+                                For every element \(a \, \epsilon \, G \), there exists an element \(a' \, \epsilon \, G \)
+                                such that:<br>
+                                \(a * a' = a' * a = e\) <br> <br>
+
+                                This \(a'\) is known as the inverse of \(a\). It also follows that \(a\) is the inverse
+                                of \(a'\).
+                            </li>
+                        </ol>
+                        It is worth noting that commutativity under the binary operation \(*\) is <b>not</b> a requirement. 
+                    </p>
+
+                <h3>Theorems</h3>
+                <h3>Examples of Groups</h3>
+                <h3>Cube Moves as Group Elements</h3>
+                <h3>Permutations</h3>
+                <h3>Parity</h3>
+                <h3>Subgroups</h3>
+                <h3>Lagrange's Theorem</h3>
+                <h3>Cayley Graph</h3>
+            </div>
+        </section>
+        <section> 
+            <div class="prose">
+                <h2>Macros</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+        <p></p>
+        <p></p>
+    </main>
+</body>

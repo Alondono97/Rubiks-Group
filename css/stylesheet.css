@@ -1,0 +1,22 @@
+.body{
+    background-color: bisque;
+}
+a:link{
+    color: rgb(75, 95, 182);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(140, 90, 187);
+}
+.title{
+    /* max-width: 50rem; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 300%;
+    
+}
+.prose{
+    max-width: 50rem;
+    margin: 0 auto;
+    font-size: 150%;
+}
