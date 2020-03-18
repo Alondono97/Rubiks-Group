@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
 </head>
 <body class="body">
@@ -35,13 +36,31 @@
             <div class="prose">
                 <h2>Rubik's Notation</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.
+                    The following notation will be used to refer to the different sides of the cube through out this article:
+                </p>
+                <div>
+                    Front F
+                </div>
+                <div>
+                    Down D 
+                </div>
+                <div>
+                    Left L
+                </div>
+                <div>
+                    Right R
+                </div>
+                <div>
+                    Up U
+                </div>
+                <div>
+                    Back B
+                </div>
+                <p>
+                    The same notation will refer to clockwise, \(90 ^\circ \) rotations of the corresponding face. For example \(F\) 
+                    will refer to a clockwise, \(90 ^\circ \) roation of the front face. To correspond with coming group theory notation
+                    a counterclockwise rotation will be denoted by \(F'\). A superscript added to the notation will indicate the number of times 
+                    that action is performed. For example \(FF\), a rotation of \(180 ^\circ\) of the front face will be denoted \(F^{2}\).
                 </p>
             </div>
         </section>
@@ -51,7 +70,7 @@
                 <h3>What is a Group?</h3>
                     <p>
                         We will begin with the definition of a group. However, before we can define a group, we
-                        must define the concept of a Binary Operator.                 
+                        must define the concept of a binary operator.                 
                     </p>
 
                     <b>Def Binary Operator:</b>
@@ -66,7 +85,7 @@
                         \( 2 + 3 = 5 \, \epsilon \, \mathbb{Z} \)
                     </p>
 
-                    <b>Def Group</b>
+                    <b>Def Group:</b>
                     <p>
 
                         A Group is a set, let's call it G, paired with a binary operation \(*\) which fulfills
@@ -95,14 +114,48 @@
                                 \(a * a' = a' * a = e\) <br> <br>
 
                                 This \(a'\) is known as the inverse of \(a\). It also follows that \(a\) is the inverse
-                                of \(a'\).
+                                of \(a'\). The inverse of \(a\), \(a'\), can also be denoted \(a^{-1}\).
                             </li>
                         </ol>
                         It is worth noting that commutativity under the binary operation \(*\) is <b>not</b> a requirement. 
+                        Commutative groups are a special type of group known as <i>abelian</i> groups.<br>
+                        <br>
+                        Groups are often denoted \(\langle G, * \rangle \).
                     </p>
 
                 <h3>Theorems</h3>
+                    <p>
+                        The following theorems are important to keep in mind when dealing with groups:
+                        <ul>
+                            <li>The identity element, \(e\), is unique</li>
+                            <li>If \( a * b = e\), then \( a = b\,' \)</li>
+                            <li>If \(a * x = b * x \, \), then \(\, a = b\)</li>
+                            <li>The inverse of \((a*b)\) is \(b\,'*a'\)</li>
+                            <li>\((a')' = a\)</li>
+                        </ul>
+                    </p>
                 <h3>Examples of Groups</h3>
+                    <p>Here are some examples of commonly known groups:</p>
+                    <ul>
+                        <li>
+                            The set of integers, \( \mathbb{Z} \), form a group under addition \( + \).<br>
+                            Addition is an associative operation.<br>
+                            The identity element is \(0\) ( \(a + 0 = a\) ). <br>
+                            The inverse of any \(a \, \epsilon \, \mathbb{Z}\) is \(-a\).
+                        </li>
+                        <li>
+                            The set of nonzero rational numbers form a group under multiplication.<br>
+                            \(1\) is the identity element. <br>
+                            The inverse of any element \(x\) is \( \frac{1}{x} \).
+                        </li>
+                        <li>
+                            The set of \(n \times n\) non-singular matrices form a group under multiplication.<br>
+                            The identity is the \(n \times n\) identity matrix.<br>
+                            The inverse of any element is its inverse matrix. <br>
+                            <br>
+                            This group is non-commutative or <i>non-abelian</i>. The Rubik group is also <i>non-abelian</i>.
+                        </li>
+                    </ul>
                 <h3>Cube Moves as Group Elements</h3>
                 <h3>Permutations</h3>
                 <h3>Parity</h3>

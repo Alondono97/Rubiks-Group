@@ -8,6 +8,9 @@ a:link{
 a:visited{
     color: rgb(140, 90, 187);
 }
+li{
+    margin-bottom: 1em;
+}
 .title{
     /* max-width: 50rem; */
     margin: 0 auto;
