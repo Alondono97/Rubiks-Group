@@ -40,17 +40,22 @@
     margin:10em;
     width:10em;
     height:10em;
-    perspective:30em;
+    perspective:80em;
     transform-style:preserve-3d ;
-    /* animation: headbut 10s infinite; */
   }
 .block3d{
     /* background-color: rosybrown; */
     width:var(--cube-side-width);
-    height:calc(var(--cube-side-width)*0.7);
+    height:calc(var(--cube-side-width)*0.35);
     position:relative;
     /* animation: spinning 10s infinite; */
+    /* perspective: 0em; */
     transform-style:preserve-3d;
+    /* transform: rotateX(180deg); */
+}
+.display{
+    perspective: 60em;
+
 }
 
 .blockSpinX{
@@ -62,6 +67,7 @@
 .rowSpinY{
     animation: spinningY 10s infinite;
     z-index: -1;
+    perspective: 0em;
 }
 
 .negRowSpinY{
@@ -160,7 +166,11 @@
     /* 0%{transform: rotateX(45deg);}
     100%{transform: rotateX(-90deg) ;} */
     /* 0%{transform: translateZ(10rem);} */
-    transform: rotateX(-60deg);
+    transform: rotateX(-64deg) rotateZ(0deg);
+}
+
+.rotateZ{
+    transform: rotateZ(-45deg);
 }
 
 @keyframes rotate{
